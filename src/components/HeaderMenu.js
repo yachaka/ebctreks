@@ -9,7 +9,7 @@ import { withRouter } from 'react-router-dom';
 import Button from './Button';
 
 import s from './HeaderMenu.module.scss';
-import img from '../pages/shadow-header.png';
+import img from './shadow-header.png';
 
 class HeaderMenu extends Component {
   

@@ -40,10 +40,10 @@ export default IndexPage
 export const query = graphql`
   query IndexQuery {
     trekImage:file(
-      relativePath: { eq: "pages/glorious-himalaya-trek.jpg" }
+      relativePath: { eq: "pages/glorious-himalaya-trek-orig.jpg" }
     ) {
       childImageSharp {
-        sizes(maxWidth: 1440) {
+        sizes(maxWidth: 1440, maxHeight: 900, quality: 35) {
           ...GatsbyImageSharpSizes
         }
       }
