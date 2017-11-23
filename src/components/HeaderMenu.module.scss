@@ -1,0 +1,19 @@
+
+@import '../vars';
+
+.nav {
+  @extend %ms1;
+
+  border-bottom: 1px solid $gold;
+
+  ul {
+    overflow: auto;
+
+    li {
+      height: 76px;
+      line-height: 76px;
+      padding: 0 32px;
+      float: right;
+    }
+  }
+}

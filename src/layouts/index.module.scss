@@ -1,0 +1,33 @@
+
+@import '../vars';
+
+:global {
+
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    @extend %ms0;
+  }
+
+  a {
+    color: $gold;
+    text-decoration: none;
+    &:hover {
+      color: darken($gold, 8%);
+    }
+  }
+
+  /* TYPOGRAPHY */
+  .ms0 { @extend %ms0; }
+  .ms1 { @extend %ms1; }
+  .ms2 { @extend %ms2; }
+  .ms3 { @extend %ms3; }
+  .ms4 { @extend %ms4; }
+  .ms5 { @extend %ms5; }
+
+  h1 { @extend %ms5; }
+  h2 { @extend %ms4; }
+  h3 { @extend %ms3; }
+  h4 { @extend %ms2; }
+  h5 { @extend %ms1; }
+
+}

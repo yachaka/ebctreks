@@ -1,0 +1,29 @@
+
+@import '../vars';
+
+.button {
+  display: inline-block;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
+/* SIZES */
+.small {
+  @extend %ms0;
+  padding: 6px 8px;
+}
+
+.medium {
+  @extend %ms1;
+  padding: 7.5px 10px;
+}
+
+.big {
+  @extend %ms2;
+  padding: 9.375px 12.5px;
+}
+
+/* TYPES */
+.primary {
+  color: $blue;
+}
