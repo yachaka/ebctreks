@@ -1,0 +1,25 @@
+
+@import '../vars';
+
+.motto {
+  margin-bottom: 40px;
+  position: relative;
+  margin-top: 130px;
+  color: white;
+
+  img {
+    position: absolute;
+    top: -140px;
+    left: -270px;
+    z-index: 1;
+  }
+
+  .text {
+    position: relative;
+    z-index: 2;
+
+    .gold {
+      color: $gold;
+    }
+  }
+}

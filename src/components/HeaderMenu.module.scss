@@ -1,10 +1,16 @@
 
 @import '../vars';
 
+.whiteBckgd {
+  background-color: rgba(255, 255, 255, .65);
+}
+
 .nav {
   @extend %ms1;
 
-  border-bottom: 1px solid $gold;
+  .borderBottom {
+    border-bottom: 1px solid $gold;
+  }
 
   ul {
     overflow: auto;
@@ -14,6 +20,9 @@
       line-height: 76px;
       padding: 0 32px;
       float: right;
+      a {
+        color: white;
+      }
     }
   }
 }

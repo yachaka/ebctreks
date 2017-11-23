@@ -26,4 +26,10 @@
 /* TYPES */
 .primary {
   color: $blue;
+  border-color: $blue;
+
+  &:hover {
+    color: lighten($blue, 7%);
+    border-color: lighten($blue, 7%);
+  }
 }

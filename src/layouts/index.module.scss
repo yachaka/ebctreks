@@ -12,8 +12,11 @@
     color: $gold;
     text-decoration: none;
     &:hover {
-      color: darken($gold, 8%);
+      color: lighten($gold, 8%);
     }
+  }
+  .link-lookalike {
+    color: $gold;
   }
 
   /* TYPOGRAPHY */
