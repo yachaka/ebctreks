@@ -2,6 +2,9 @@
 $gold: #CE851B;
 $blue: #3573F5;
 
+$grid-gutter: 30px;
+$grid-half-gutter: $grid-gutter / 2;
+
 /* TYPOGRAPHY */
 @import '~modularscale-sass/stylesheets/modularscale';
 
@@ -10,6 +13,7 @@ $modularscale: (
   ratio: 1.25
 );
 
+%msN1 { font-size: ms(-1); line-height: 1.4; }
 %ms0 { font-size: ms(0); line-height: 1.4; }
 %ms1 { font-size: ms(1); line-height: 1.4; }
 %ms2 { font-size: ms(2); line-height: 1.4; }

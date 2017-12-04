@@ -1,0 +1,41 @@
+
+@import '../vars';
+
+.cta {
+  @extend %ms2;
+  text-align: center;
+  color: $blue;
+  padding: 60px 0;
+  border-top: 1px solid $blue;
+  border-bottom: 1px solid $blue;
+
+  p {
+    margin-bottom: 15px;
+  }
+}
+
+.footer {
+  @extend %msN1;
+  padding: 40px 0;
+  color: #999;
+
+  ul {
+    float: right;
+    li {
+      float: left;
+      margin: 0 15px;
+
+      a {
+        color: #999;
+
+        &:hover {
+          color: #444;
+        }
+      }
+    }
+  }
+
+  .mention {
+    overflow: hidden;
+  }
+}

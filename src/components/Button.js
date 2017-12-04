@@ -1,10 +1,10 @@
 
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import cx from 'classnames';
 
 import s from './Button.module.scss';
 
-class Button extends Component {
+class Button extends PureComponent {
   static defaultProps = {
     Component: 'a',
   };

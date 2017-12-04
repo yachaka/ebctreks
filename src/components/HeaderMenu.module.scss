@@ -1,18 +1,45 @@
 
 @import '../vars';
 
-.whiteBckgd {
-  background-color: rgba(255, 255, 255, .65);
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
 }
 
 .nav {
+  position: relative;
+  border-bottom: 1px solid $gold;
   @extend %ms1;
 
-  .borderBottom {
-    border-bottom: 1px solid $gold;
+  &.shouldBeWhite {
+    border-bottom: none;
+
+    ul li {
+      color: white;
+
+      a {
+        border-color: white;
+        color: white;
+
+        &:hover {
+          color: darken(white, 15%);
+          border-color: darken(white, 15%);
+        }
+      }
+    }
+  }
+
+  .shadow {
+    position: absolute;
+    right: -284px;
+    top: -34px;
   }
 
   ul {
+    position: relative;
     overflow: auto;
 
     li {
@@ -20,9 +47,6 @@
       line-height: 76px;
       padding: 0 32px;
       float: right;
-      a {
-        color: white;
-      }
     }
   }
 }

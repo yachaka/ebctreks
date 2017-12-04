@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "base64-image-loader": "^1.2.0",
     "bootstrap-grid": "^2.0.1",
     "classnames": "^2.2.5",
     "gatsby": "^1.9.119",
